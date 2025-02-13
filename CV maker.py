@@ -37,14 +37,14 @@ if profile_image_path:
 
 pdf.set_xy(55, 20)  # Pindahkan posisi teks ke samping foto
 pdf.set_font("Arial", 'B', 12)
-pdf.cell(0, 6, "Kevin Putra Tjahjono", ln=True)
+pdf.cell(0, 6, "Kevin Putra", ln=True)
 
 pdf.set_xy(55, 25)  # Atur posisi untuk biodata
 pdf.set_font("Arial", '', 10)
 profile_info = [
-    "082249571477  |  065002100020@std.trisakti.ac.id",
+    "0822495  |  vinin@gmail.com",
     "LinkedIn: linkedin.com/in/vinix-ai",
-    "Perumahan Green View Cibinong blok N 9, Kab.Bogor, Jawa Barat"
+    "Perumahan Green View Cibinong blok N"
 ]
 for info in profile_info:
     pdf.set_x(55)  # Set x agar sejajar dengan judul
@@ -55,7 +55,7 @@ pdf.ln(22)  # Beri jarak sebelum bagian selanjutnya
 # ---- Profil Singkat ----
 pdf.add_section_title("Profil Singkat")
 pdf.set_font("Arial", '', 10)
-pdf.multi_cell(0, 5, "Saya Kevin Putra Tjahjono, mahasiswa aktif Sistem Informasi di Universitas Trisakti Jakarta. "
+pdf.multi_cell(0, 5, "Saya Kevin Putr, mahasiswa aktif Sistem Informasi di Universitas Trisakti Jakarta. "
                      "Saya memiliki pengalaman dalam Analisis Data dan Perencanaan Bisnis, serta memiliki minat dalam memahami kebutuhan klien "
                      "agar dapat diterjemahkan dengan baik kepada tim. Saya bersemangat untuk terus belajar dan berkembang.")
 
@@ -86,12 +86,12 @@ pdf.add_section_title("Sertifikasi")
 pdf.set_font("Arial", '', 10)
 certificates = [
     ("Digital Skills of Today and Tomorrow (Feb 2022)", "https://drive.google.com/file/d/1kW7kcPU6I06tNBsQ7hLQgCf591s5DYyr/view?usp=sharing"),
-    ("Kuliah Umum K3L (Jun 2022)", "https://drive.google.com/file/d/1o3wpPeglg9qWvV-6BgATp_rUQhhgXO0p/view?usp=sharing"),
-    ("Asisten Laboratorium (Jan 2025)", "https://drive.google.com/file/d/1BptB8kyav4H_5NRyd4xBNUdO5rKefV05/view?usp=sharing"),
-    ("Webinar Social Education (Okt 2021)", "https://drive.google.com/file/d/1dsZXJifjWlyDUcUJGM-dhF-RB6uCnoOK/view?usp=sharing"),
-    ("Seminar Blockchain (Mar 2024)", "https://drive.google.com/file/d/1ogRiKaVONcD7-jiEGDfBXGi0vjSIGYyc/view?usp=sharing"),
-    ("Workshop Data Academy (Des 2023)", "https://drive.google.com/file/d/1upvb-iP1FjLVjSHL0g0Bj6nxq_XeOlsc/view?usp=sharing"),
-    ("Webinar Career Preparation (Mar 2022)", "https://drive.google.com/file/d/13mwThZzwuyDp84DLnTyEJr3P82Riggbv/view?usp=sharing")
+    ("Kuliah Umum K3L (Jun 2022)", "https://drive.google.com/file/d/1o3wpPeg"),
+    ("Asisten Laboratorium (Jan 2025)", "https://drive.google.com/file/d/1BptB8kyav4H"),
+    ("Webinar Social Education (Okt 2021)", "https://drive.google.com/file/d/1dsZXJifj"),
+    ("Seminar Blockchain (Mar 2024)", "https://drive.google.com/file/d/1ogRiKaVONcD"),
+    ("Workshop Data Academy (Des 2023)", "https://drive.google.com/file/d/1upvb-iP1FjLV"),
+    ("Webinar Career Preparation (Mar 2022)", "https://drive.google.com/file/d/13mwThZz")
 ]
 for cert, link in certificates:
     pdf.set_text_color(0, 0, 255)
